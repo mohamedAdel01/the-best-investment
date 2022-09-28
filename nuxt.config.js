@@ -87,7 +87,6 @@ export default {
   generate: {
     subFolders: false,
   },
-  target: "server",
   components: {
     dirs: ["~/components", "~/components/home"],
   },
