@@ -2,7 +2,9 @@
   <header class="px-5">
     <div
       class="d-flex justify-content-between align-items-center mb-5 py-4"
-      data-aos="fade-down" data-aos-duration="1500"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+      data-aos-delay="2200"
     >
       <div>
         <inline-svg height="80px" :src="require('@/static/logo.svg')"></inline-svg>
@@ -20,7 +22,12 @@
     </div>
 
     <div class="d-flex justify-content-between align-items-end pb-5">
-      <div class="col-5 px-0 mb-5" data-aos="fade-right" data-aos-duration="1500">
+      <div
+        class="col-5 px-0 mb-5"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-delay="2200"
+      >
         <div class="mb-5 pb-5">
           <h1 class="mb-5 text-primary font-weight-bold" style="font-size: 60px">
             {{ $t("THE BEST WAY TO FIND YOUR HOME") }}
@@ -42,16 +49,19 @@
         </div>
       </div>
 
-      <div class="col-4 px-0" data-aos="zoom-in" data-aos-duration="2000">
+      <div
+        class="col-4 px-0"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        data-aos-delay="2200"
+      >
         <home-message-form />
       </div>
     </div>
   </header>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 <style lang="scss">
 header {
   background-image: url("@/static/cover.png"); /* fallback for old browsers */
