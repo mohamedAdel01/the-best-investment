@@ -87,7 +87,6 @@ export default {
   generate: {
     subFolders: false,
   },
-  mode: "universal",
   target: "server",
   server: {
     port: 8080,
