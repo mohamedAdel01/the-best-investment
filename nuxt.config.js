@@ -87,6 +87,12 @@ export default {
   generate: {
     subFolders: false,
   },
+  mode: "universal",
+  target: "server",
+  server: {
+    port: 8080,
+    host: "0.0.0.0",
+  },
   components: {
     dirs: ["~/components", "~/components/home"],
   },
