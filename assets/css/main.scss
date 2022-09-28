@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@import "./colors.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-vue/src/index.scss";
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html,
+body {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+
+  &:lang(ar) {
+    text-align: right;
+  }
+}
+
+body {
+  height: 100% !important;
+  padding: 0;
+}
+.d-ar-flex {
+  &:lang(ar) {
+    display: flex;
+  }
+}
+
+ul {
+  margin: 0;
+  li {
+    list-style: none !important;
+  }
+}
