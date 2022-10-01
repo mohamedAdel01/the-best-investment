@@ -26,7 +26,7 @@ export default {
     setTimeout(() => {
       const bodyElement = document.querySelector("body");
       bodyElement.classList.add("loaded");
-    }, 2000);
+    }, 1000);
   },
 };
 </script>

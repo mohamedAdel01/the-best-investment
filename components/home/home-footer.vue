@@ -6,29 +6,32 @@
           {{ $t("Get in touch") }}
         </h2>
 
-        <div class="d-flex align-items-center mb-4">
+<div class="d-flex flex-wrap align-items-center">
+
+        <div class="col-md-3 col-12 d-flex align-items-center mb-4 px-4">
           <div>
             <inline-svg height="40px" :src="require('@/static/phone.svg')"></inline-svg>
           </div>
           <p class="mx-3 mb-0 text-white" style="font-18">01124458565</p>
         </div>
 
-        <div class="d-flex align-items-center mb-4">
+        <div class="col-md-3 col-12 d-flex align-items-center mb-4 px-4">
           <div>
             <inline-svg height="40px" :src="require('@/static/phone.svg')"></inline-svg>
           </div>
           <p class="mx-3 mb-0 text-white" style="font-18">01114466177</p>
         </div>
 
-        <div class="d-flex align-items-center mb-4">
+        <div class="col-md-3 col-12 d-flex align-items-center mb-4 px-4">
           <div>
             <inline-svg height="40px" :src="require('@/static/email.svg')"></inline-svg>
           </div>
           <p class="mx-3 mb-0 text-white" style="font-18">thebestinvestment.info</p>
         </div>
+</div>
       </div>
 
-      <div class="col-3 px-0">
+      <!-- <div class="col-3 px-0">
         <b-form-group class="mb-4">
           <b-form-input
             dir="auto"
@@ -45,7 +48,7 @@
         >
           {{ $t("Subscribe") }}
         </button>
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>

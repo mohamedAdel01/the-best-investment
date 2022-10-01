@@ -1,16 +1,16 @@
 <template>
-  <header class="px-5">
+  <header class="home-header px-lg-5 px-md-4 px-3">
     <div
       class="d-flex justify-content-between align-items-center mb-5 py-4"
       data-aos="fade-down"
       data-aos-duration="1500"
-      data-aos-delay="2200"
+      data-aos-delay="1200"
     >
       <div>
-        <inline-svg height="80px" :src="require('@/static/logo.svg')"></inline-svg>
+        <inline-svg class="logo" :src="require('@/static/logo.svg')"></inline-svg>
       </div>
 
-      <ul
+      <!-- <ul
         class="d-flex justify-content-between p-0 text-white mx-n4"
         style="font-size: 16px"
       >
@@ -18,18 +18,18 @@
         <li class="px-4">{{ $t("About Us") }}</li>
         <li class="px-4">{{ $t("Partners") }}</li>
         <li class="px-4">{{ $t("Contact Us") }}</li>
-      </ul>
+      </ul> -->
     </div>
 
-    <div class="d-flex justify-content-between align-items-end pb-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end pb-5">
       <div
-        class="col-5 px-0 mb-5"
+        class="col-lg-5 col-md-6 col-12 px-0 mb-5"
         data-aos="fade-right"
         data-aos-duration="1500"
-        data-aos-delay="2200"
+        data-aos-delay="1200"
       >
-        <div class="mb-5 pb-5">
-          <h1 class="mb-5 text-primary font-weight-bold" style="font-size: 60px">
+        <div class="mb-5 pb-lg-5 pb-0">
+          <h1 class="mb-md-5 mb-4 text-primary font-weight-bold">
             {{ $t("THE BEST WAY TO FIND YOUR HOME") }}
           </h1>
           <button
@@ -50,10 +50,11 @@
       </div>
 
       <div
-        class="col-4 px-0"
+      v-if="false"
+        class="col-xl-4 col-lg-5 col-md-6 col-12 px-0"
         data-aos="zoom-in"
         data-aos-duration="1500"
-        data-aos-delay="2200"
+        data-aos-delay="1200"
       >
         <home-message-form />
       </div>
@@ -68,5 +69,32 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+</style>
+
+<style lang="scss">
+.home-header {
+  h1 {
+    font-size: 60px;
+  }
+  .logo {
+    height: 80px;
+  }
+  @media only screen and (max-width: 1000px) {
+    h1 {
+      font-size: 40px;
+    }
+    .logo {
+      height: 60px;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    h1 {
+      font-size: 25px;
+    }
+    .logo {
+      height: 50px;
+    }
+  }
 }
 </style>

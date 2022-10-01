@@ -1,5 +1,5 @@
 <template>
-  <form class="bg-white p-4 mx-5" style="border-radius: 40px" @submit.prevent>
+  <form class="bg-white p-4 mx-xl-5 mx-md-4 mx-1" style="border-radius: 40px" @submit.prevent>
     <h2
       class="mt-3 mb-4 text-center text-secondary font-weight-bold"
       style="font-size: 20px"
