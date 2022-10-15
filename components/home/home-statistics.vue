@@ -38,6 +38,7 @@
           v-if="showCounter"
           :from="1"
           :to="750000000"
+          :format="theFormat"
           :duration="2"
           :delay="0.3"
           easing="Power1.easeOut"
@@ -62,6 +63,9 @@ export default {
     handleScroll() {
       if (window.pageYOffset > 1) this.showCounter = true;
     },
+    theFormat(number) {
+      return (number).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    }
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
