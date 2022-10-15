@@ -36,7 +36,7 @@
             class="btn btn-primary text-secondary rounded-pill px-5 font-weight-bold"
             style="font-size: 16px; height: 50px; line-height: 38px"
             target="_blank"
-            href="https://api.whatsapp.com/send?phone=0201124458565"
+            :href="`https://api.whatsapp.com/send?phone=%2B2${'01124458565'}`"
           >
             {{ $t("Contact Us") }}
           </a>

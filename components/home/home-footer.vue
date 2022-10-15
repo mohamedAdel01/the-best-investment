@@ -15,7 +15,7 @@
               class="mx-3 mb-0 text-white"
               style="font-18"
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=0201124458565"
+              :href="`https://api.whatsapp.com/send?phone=%2B2${'01124458565'}`"
             >
               01124458565</a
             >
@@ -29,7 +29,7 @@
               class="mx-3 mb-0 text-white"
               style="font-18"
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=0201114466177"
+              :href="`https://api.whatsapp.com/send?phone=%2B2${'01114466177'}`"
             >
               01114466177</a
             >
