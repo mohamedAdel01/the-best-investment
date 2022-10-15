@@ -4,8 +4,8 @@ export default {
     link: [
       {
         rel: "icon",
-        type: 'image/x-icon',
-        href: '/static/favicon.ico',
+        type: "image/x-icon",
+        href: "/favicon.ico",
       },
     ],
     meta: [
@@ -44,7 +44,7 @@ export default {
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: `/static/favicon.ico`,
+        content: `/favicon.ico`,
       },
       {
         hid: "description",
@@ -64,7 +64,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: `/static/favicon.ico`,
+        content: `/favicon.ico`,
       },
       {
         hid: "og:site_name",
@@ -110,6 +110,7 @@ export default {
     { src: "~plugins/aos", ssr: false },
     { src: "~plugins/inline-svg", ssr: false },
     { src: "~plugins/number-animation", ssr: false },
+    { src: "~plugins/slick-carousel", ssr: false },
   ],
 
   i18n: {

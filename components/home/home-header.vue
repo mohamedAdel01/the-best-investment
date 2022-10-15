@@ -32,25 +32,34 @@
           <h1 class="mb-md-5 mb-4 text-primary font-weight-bold">
             {{ $t("THE BEST WAY TO FIND YOUR HOME") }}
           </h1>
-          <button
+          <a
             class="btn btn-primary text-secondary rounded-pill px-5 font-weight-bold"
-            style="font-size: 16px; height: 50px"
+            style="font-size: 16px; height: 50px; line-height: 38px"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=0201124458565"
           >
             {{ $t("Contact Us") }}
-          </button>
+          </a>
         </div>
         <div class="d-flex align-items-center">
           <div>
-            <inline-svg :src="require('@/static/facebook.svg')"></inline-svg>
+            <a target="_blank" href="https://www.facebook.com/thebestinvestmenttbi/">
+              <inline-svg :src="require('@/static/facebook.svg')"></inline-svg>
+            </a>
           </div>
           <div class="mx-3">
-            <inline-svg :src="require('@/static/insta.svg')"></inline-svg>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/thebestinvestment91/?igshid=NmNmNjAwNzg%3D"
+            >
+              <inline-svg :src="require('@/static/insta.svg')"></inline-svg>
+            </a>
           </div>
         </div>
       </div>
 
       <div
-      v-if="false"
+        v-if="false"
         class="col-xl-4 col-lg-5 col-md-6 col-12 px-0"
         data-aos="zoom-in"
         data-aos-duration="1500"
